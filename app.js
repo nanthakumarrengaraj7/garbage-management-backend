@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: 'http://localhost:4200', // ✅ Allow only Angular frontend
+    origin: 'https://garbage-management.netlify.app', // ✅ Allow only Angular frontend
     credentials: true, // ✅ Allow cookies and authentication headers
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // ✅ Allowed HTTP methods
   })
