@@ -18,7 +18,7 @@ app.use(
 );
 app.use(bodyParser.json());
 
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
